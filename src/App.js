@@ -1,12 +1,42 @@
 import React from "react";
-import Header from "./components/Header";
 import Counter from "./components/Count";
+import Header from "./components/Header";
+import About from "./components/About";
+import Home from "./components/Home";
+import { Route, Routes } from "react-router-dom";
 
 export default function App() {
   return (
     <>
-      <Header />
-      <Counter />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Home />
+            </>
+          }
+        />
+        <Route
+          path="/counter"
+          element={
+            <>
+              <Header />
+              <Counter />
+            </>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <>
+              <Header />
+              <About />
+            </>
+          }
+        />
+      </Routes>
     </>
   );
 }

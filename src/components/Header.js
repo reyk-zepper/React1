@@ -1,13 +1,20 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
     <StyledHeader>
       <ul>
-        <li>Home</li>
-        <li>Counter</li>
-        <li>About</li>
+        <Link to={"/"}>
+          <li>Home</li>
+        </Link>
+        <Link to={"/counter"}>
+          <li>Counter</li>
+        </Link>
+        <Link to={"/about"}>
+          <li>About</li>
+        </Link>
       </ul>
     </StyledHeader>
   );

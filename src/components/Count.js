@@ -18,12 +18,14 @@ export default function Counter() {
   }, [count]);
 
   return (
-    <StyledCounter>
-      <h1>Counter</h1>
-      <button onClick={handleClick}>{count}</button>
-      <button onClick={() => setCount(count + 1)}>+</button>
-      {count > 0 && <button onClick={decrement}>-</button>}
-    </StyledCounter>
+    <>
+      <StyledCounter>
+        <h1>Counter</h1>
+        <button onClick={handleClick}>{count}</button>
+        <button onClick={() => setCount(count + 1)}>+</button>
+        {count > 0 && <button onClick={decrement}>-</button>}
+      </StyledCounter>
+    </>
   );
 }
 
