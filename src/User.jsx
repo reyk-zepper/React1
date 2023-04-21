@@ -1,10 +1,10 @@
 import React from "react";
 
-export default function User({ name }) {
+export default function User({ name, kind }) {
   return (
     <div>
-      <h1>hello my name is</h1>
-      <p>{name}</p>
+      <h1>hello my name is {name}</h1>
+      <p>i'm a {kind}</p>
     </div>
   );
 }
