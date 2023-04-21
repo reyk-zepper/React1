@@ -3,6 +3,7 @@ import Counter from "./components/Count";
 import Header from "./components/Header";
 import About from "./components/About";
 import Home from "./components/Home";
+import Errorpage from "./components/Errorpage";
 import { Route, Routes } from "react-router-dom";
 
 export default function App() {
@@ -36,6 +37,8 @@ export default function App() {
             </>
           }
         />
+
+        <Route path="*" element={<Errorpage />} />
       </Routes>
     </>
   );
