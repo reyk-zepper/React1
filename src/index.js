@@ -1,9 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import Header from "./Header";
+import User from "./User";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Header />);
+root.render(
+  <>
+    <Header />
+    <User />
+  </>
+);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
