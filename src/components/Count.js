@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useState } from "react";
 
 export default function Counter() {
   const [count, setCount] = useState(0);
+  useEffect(() => {
+    console.log({ count });
+  }, [count]);
+
   const decrement = () => {
     if (count > 0) {
       setCount(count - 1);
