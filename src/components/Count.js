@@ -18,7 +18,7 @@ export default function Counter() {
       <h1>Counter</h1>
       <button onClick={handleClick}>{count}</button>
       <button onClick={() => setCount(count + 1)}>+</button>
-      <button onClick={decrement}>-</button>
+      {count > 0 && <button onClick={decrement}>-</button>}
     </StyledCounter>
   );
 }
