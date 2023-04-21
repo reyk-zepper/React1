@@ -3,11 +3,13 @@ import ReactDOM from "react-dom/client";
 import Header from "./Header";
 import User from "./User";
 
+const name = "simba";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
     <Header />
-    <User />
+    <User name={name} />
   </>
 );
 
