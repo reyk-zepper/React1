@@ -9,10 +9,14 @@ export default function Counter() {
       setCount(count - 1);
     }
   };
+  const double = () => {
+    setCount(count * 2);
+  };
+
   return (
     <StyledCounter>
       <h1>Counter</h1>
-      <p>{count}</p>
+      <button onClick={double}>{count}</button>
       <button onClick={() => setCount(count + 1)}>+</button>
       <button onClick={decrement}>-</button>
     </StyledCounter>
