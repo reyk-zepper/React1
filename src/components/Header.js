@@ -12,8 +12,8 @@ export default function Header() {
         <Link to={"/counter"}>
           <li>Counter</li>
         </Link>
-        <Link to={"/about"}>
-          <li>About</li>
+        <Link to={"/calculator"}>
+          <li>Calculator</li>
         </Link>
       </ul>
     </StyledHeader>
