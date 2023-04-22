@@ -21,9 +21,9 @@ export default function Counter() {
     <>
       <StyledCounter>
         <h1>Counter</h1>
-        <button onClick={handleClick}>{count}</button>
-        <button onClick={() => setCount(count + 1)}>+</button>
-        {count > 0 && <button onClick={decrement}>-</button>}
+        <StyledButtonCounter onClick={handleClick}>{count}</StyledButtonCounter>
+        <StyledButton onClick={() => setCount(count + 1)}>+</StyledButton>
+        {count > 0 && <StyledButton onClick={decrement}>-</StyledButton>}
       </StyledCounter>
     </>
   );
@@ -43,14 +43,26 @@ const StyledCounter = styled.div`
   h1 {
     font-size: 4rem;
   }
-  button {
-    font-size: 2rem;
-    margin: 1rem;
+`;
+
+const StyledButtonCounter = styled.button`
+  border: red solid 1px;
+  font-size: 10rem;
+  margin: 1rem;
+  border-radius: 1rem;
+  :hover {
+    background-color: grey;
+    color: #282c34;
   }
-  p {
-    font-size: 4rem;
-    border: 1px solid white;
-    border-radius: 1rem;
-    padding: 1rem;
+`;
+
+const StyledButton = styled.button`
+  border: red solid 1px;
+  font-size: 3rem;
+  margin: 1rem;
+  border-radius: 50%;
+  :hover {
+    background-color: coral;
+    color: #282c34;
   }
 `;

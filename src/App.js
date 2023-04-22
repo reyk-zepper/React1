@@ -6,6 +6,8 @@ import Home from "./components/Home";
 import Errorpage from "./components/Errorpage";
 import { Route, Routes } from "react-router-dom";
 
+import RickAndMorty from "./components/RickAndMorty";
+
 export default function App() {
   return (
     <>
@@ -34,6 +36,15 @@ export default function App() {
             <>
               <Header />
               <Calculator />
+            </>
+          }
+        />
+        <Route
+          path="/rickandmorty"
+          element={
+            <>
+              <Header />
+              <RickAndMorty />
             </>
           }
         />
