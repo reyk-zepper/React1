@@ -15,6 +15,9 @@ export default function Header() {
         <Link to={"/calculator"}>
           <li>Calculator</li>
         </Link>
+        <Link to={"/pokemon"}>
+          <li>PokemonAPI</li>
+        </Link>
       </ul>
     </StyledHeader>
   );

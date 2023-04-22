@@ -5,6 +5,7 @@ import Calculator from "./components/Calculator";
 import Home from "./components/Home";
 import Errorpage from "./components/Errorpage";
 import { Route, Routes } from "react-router-dom";
+import Pokemon from "./components/Pokemon";
 
 export default function App() {
   return (
@@ -34,6 +35,15 @@ export default function App() {
             <>
               <Header />
               <Calculator />
+            </>
+          }
+        />
+        <Route
+          path="/pokemon"
+          element={
+            <>
+              <Header />
+              <Pokemon />
             </>
           }
         />
